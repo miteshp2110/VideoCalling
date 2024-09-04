@@ -21,15 +21,19 @@ A simple real-time video calling application built using WebSocket in an Express
 ```bash
 git clone https://github.com/miteshp2110/VideoCalling.git
 ```
-
+### 2. Change Directory
 ```bash
 cd VideoCalling
 
 ```
+
+### 3. Install Dependencies
 ```bash
 npm install
 
 ```
+
+### 4. Start Server 
 ```bash
 node index
 
