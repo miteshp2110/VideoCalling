@@ -1,0 +1,70 @@
+html,body{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    column-gap: 10%;
+    
+}
+
+.container{
+    margin-top: 20vh;
+    height: 50vh;
+    padding: 20px;
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10%;
+    display: flex;    
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.inputField ,button{
+    font-size: 2.8vh;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all ease-in-out 0.3s;
+}
+#connectButton{
+    padding-inline: 10px;
+}
+ #connectButton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all ease-in-out 0.3s;
+ }
+
+.inputField::placeholder{
+    color: white;
+}
+
+@media (max-width: 767px){
+    body{
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .container{
+        height: 15em;
+        width: 10em;
+        margin-top: 10em;
+        flex-direction: column;
+        justify-content: center;
+    
+        
+        
+    }
+    .inputField{
+        font-size:0.75em ;
+    }
+    #connectButton{
+        font-size: 0.9em;
+    }
+    
+}

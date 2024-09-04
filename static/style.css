@@ -1,0 +1,172 @@
+html , body{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+
+.heading{
+    text-align: center;
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+
+
+.mainContainer{
+    background-color: black;
+    margin-top: 1.5em;
+    padding: 10px;
+    height: calc(100vh - 5em  - 10px);
+    border-radius: 10px;
+    display: flex;
+    column-gap: 1em;
+
+
+}
+
+.remoteStreamContainer{
+    background-color: black;
+    width: 65vw;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.remoteVideo{
+    background-color: black;
+    
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;   
+    transition: all ease-in-out 0.3s;
+}
+
+.remoteVideo video{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    
+}
+
+
+
+
+.localStreamContainer{
+    background-color: black;
+    padding: 8px;
+    border-radius: 10px;
+    width: calc(100vw - 65vw );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5vh;
+    
+    
+    
+    
+}
+
+.localVideo{
+    background-color: white;
+    padding: 10px;
+    
+    border-radius: 15px;
+    z-index: 1;
+    
+}
+
+#localVideo{
+    border-radius: 13px;
+    height: 100%;
+    min-height: 9.5em;
+    min-width: 8em;
+    width: 100%;
+    border: none;
+    z-index: 1;
+    
+    
+    
+}
+
+
+.button{
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
+    letter-spacing: 2px;
+    
+}
+.button:hover{
+    cursor: pointer;
+    
+}
+
+
+#callButton{
+    background:rgb(24, 236, 24);
+    color: white;
+    
+    
+}
+
+#disconnectButton{
+    background-color: rgb(255, 16, 16);
+    color: white;
+    display: none;
+}
+
+
+
+
+@media (max-width:767px){
+    .mainContainer{
+        flex-direction: column;
+        
+    }
+    .remoteStreamContainer{
+        width: auto;
+        height: 50vh;
+    }
+    .localStreamContainer{
+        background-color: black;
+        height: 30vh;
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        
+        overflow: hidden;
+
+
+    }
+
+    .button{
+        font-size: 12px;
+    }
+
+    .localVideo{
+        
+        background-color: white;
+        object-fit: cover;
+        background-color: black;
+        
+    }
+    
+
+}
+

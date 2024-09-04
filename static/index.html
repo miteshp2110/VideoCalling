@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="heading">
+        Room: no
+    </div>
+    
+    <div class="mainContainer">
+
+        <div class="remoteStreamContainer" id="remoteStreamContainer" >
+           
+            <div class="remoteVideo">
+                <video   autoplay id="remoteVid"></video>
+            </div>    
+        </div>
+        
+        <div class="localStreamContainer">
+            
+           
+            <div class="localVideo">
+                <video  autoplay muted id="localVideo"></video>
+            </div>
+            <button id="callButton" class="button">Call</button>
+            <button id="disconnectButton" class="button">Exit</button>
+
+        </div>
+        
+
+    </div>
+    
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
